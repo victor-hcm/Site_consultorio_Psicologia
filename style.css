@@ -1,0 +1,93 @@
+
+:root {
+    --primary-color: #013F72;      
+    --primary-hover: #012b4e;
+    --secondary-color: #5799b6;     
+    --accent-color: #D97706;       
+    --text-color: #333333;
+    --bg-light: #687f96;
+    --font-heading: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-family: var(--font-heading);
+    color: var(--text-color);
+    background-color: var(--bg-light);
+    margin: 0;
+    padding-top: 40px;
+}
+
+.black-friday-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #013F72, #D97706);
+    color: white;
+    text-align: center;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    z-index: 1050;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.black-friday-bar span {
+    background-color: #fff;
+    color: #D97706;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-left: 10px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.navbar {
+    background-color: var(--primary-color) !important;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    top: 36px;
+}
+
+.navbar-brand, .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+.service-card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #8be9a2;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(1, 63, 114, 0.15);
+}
+
+.price-old {
+    text-decoration: line-through;
+    color: #166b48;
+    font-size: 0.85rem;
+}
+
+.price-current {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: rgb(40, 116, 187);
+    padding: 40px 0 20px 0;
+    margin-top: 60px;
+}
+
+footer hr {
+    border-color: rgba(255, 255, 255, 0.2);
+}

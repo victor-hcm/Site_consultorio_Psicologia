@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento - Espaço MeD + Vida</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="\Users\victor.moreira\Downloads\consultorio-psicologia/css/style.css">
+</head>
+<body>
+    <div class="black-friday-bar">
+        <i class="fa-solid fa-tag"></i> <strong>Black Friday de Cuidado:</strong> Garanta seu horário promocional.
+    </div>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-brain"></i> Espaço MeD + Vida</a>
+            <div class="ms-auto">
+                <a class="btn btn-light text-primary fw-bold" href="index.html">Voltar ao Início</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5 pt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow p-4 border-0">
+                    <h2 class="text-primary text-center mb-4">Pré-Agendamento de Consulta</h2>
+                    <form id="formAgendamento">
+                        <div class="mb-3">
+                            <label class="form-label">Nome Completo</label>
+                            <input type="text" class="form-control" required placeholder="Digite seu nome completo">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">E-mail</label>
+                                <input type="email" class="form-control" required placeholder="seu@email.com">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Telefone / WhatsApp</label>
+                                <input type="text" class="form-control" required placeholder="(00) 00000-0000">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Selecione o Serviço</label>
+                            <select class="form-select" required>
+                                <option value="">Escolha...</option>
+                                <option>Acolhimento Inicial (R$ 150,00)</option>
+                                <option>Psicoterapia Individual (R$ 200,00)</option>
+                                <option>Terapia de Casal (R$ 280,00)</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Data Desejada</label>
+                                <input type="date" class="form-control" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Horário</label>
+                                <select class="form-select" required>
+                                    <option value="">Selecione o horário...</option>
+                                    <option>09:00</option>
+                                    <option>14:00</option>
+                                    <option>16:30</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- LGPD Consentimento Obrigatório -->
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" id="lgpd" required>
+                            <label class="form-check-label small" for="lgpd">
+                                Concordo com o tratamento dos meus dados pessoais para fins exclusivos de agendamento, em conformidade com a <strong>LGPD (Lei nº 13.709/2018)</strong>.
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 py-2">Confirmar Solicitação de Agendamento</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-white mt-5">
+        <div class="container text-center">
+            <p class="small">Dra. Camila Mendes – CRP 06/12345 | Em caso de emergência, ligue CVV (188)</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
