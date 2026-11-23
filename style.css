@@ -61,7 +61,7 @@ body {
     border: none;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background: #8be9a2;
+    background: #ffffff;
 }
 
 .service-card:hover {
